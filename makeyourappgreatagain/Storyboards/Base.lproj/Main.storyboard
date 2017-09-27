@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dsj-je-NdP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4aS-D1-RjP">
+            <objects>
+                <tabBarController id="dsj-je-NdP" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iai-pd-8kz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.8980392157" green="0.098039215690000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.21176470588235294" green="0.23529411764705882" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="b2h-4P-vKW" kind="relationship" relationship="viewControllers" id="hrP-JG-GlT"/>
+                        <segue destination="HTs-dN-4ct" kind="relationship" relationship="viewControllers" id="zFE-Re-HF3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CCo-t2-MpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="-911"/>
+        </scene>
+        <!--Partners-->
+        <scene sceneID="nHO-gB-KX5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b2h-4P-vKW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Partners" image="partners" id="OXa-nY-KlJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XSC-79-LAD">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VF3-sI-B2v" kind="relationship" relationship="rootViewController" id="K1S-aE-tzc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orU-8k-iGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1622.4000000000001" y="-1244.0779610194904"/>
+        </scene>
+        <!--Partners-->
+        <scene sceneID="n0r-tL-B5e">
+            <objects>
+                <tableViewController title="Partners" id="VF3-sI-B2v" customClass="PartnersViewController" customModule="makeyourappgreatagain" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9YG-uy-zRX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.14509803921568626" green="0.16470588235294117" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.89803921568627454" green="0.098039215686274508" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <connections>
+                            <outlet property="dataSource" destination="VF3-sI-B2v" id="FUj-LK-S0z"/>
+                            <outlet property="delegate" destination="VF3-sI-B2v" id="IEq-oX-CrP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Partners" id="yrG-np-AzZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hH-Xg-xjr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2406" y="-1245"/>
+        </scene>
+        <!--Mentors-->
+        <scene sceneID="ldd-pv-rsA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HTs-dN-4ct" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mentors" image="mentors" id="eFi-1p-rKd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8iV-ak-xOB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0no-3W-2D4" kind="relationship" relationship="rootViewController" id="QHS-9G-AaG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wWA-BK-XdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1622" y="-485"/>
+        </scene>
+        <!--Mentors-->
+        <scene sceneID="jgh-yW-YqL">
+            <objects>
+                <tableViewController title="Mentors" id="0no-3W-2D4" customClass="MentorsViewController" customModule="makeyourappgreatagain" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ViH-x0-DT2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.1450980392" green="0.1647058824" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.89803921568627454" green="0.098039215686274508" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <connections>
+                            <outlet property="dataSource" destination="0no-3W-2D4" id="jzg-n8-Xv0"/>
+                            <outlet property="delegate" destination="0no-3W-2D4" id="JpG-Ry-DUs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Mentors" id="Ao5-xW-CgD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vL-3K-lvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2406" y="-484"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mentors" width="25" height="24"/>
+        <image name="partners" width="33" height="25"/>
+    </resources>
+</document>
