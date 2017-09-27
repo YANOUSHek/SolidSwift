@@ -59,16 +59,7 @@ class PartnersViewController: UITableViewController {
 
         let partner = self.partners[indexPath.row]
 
-        cell.name.text = partner.name
-        cell.picture.downloadedFrom(link: partner.logoUrl)
-        cell.imageLeadingConstraint.constant = 20.0
-        cell.imageTrailingConstraint.constant = 20.0
-
-        cell.backgroundColor = UIColor.customDarkGray
-
-        let bgColorView = UIView()
-        bgColorView.backgroundColor = UIColor.customGray
-        cell.selectedBackgroundView = bgColorView
+        cell.configure(with: partner)
 
         return cell
     }
@@ -78,8 +69,8 @@ class PartnersViewController: UITableViewController {
 
         let storyboard = UIStoryboard(name: StoryboardName.details, bundle: nil)
 
-        if let viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerName.partner) as? PartnerViewController {
-            viewController.partner = partner
+        if let viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerName.presentation) as? PresentationViewController {
+            viewController.viewModel = partner
 
             self.navigationController?.pushViewController(viewController, animated: true)
         }

@@ -15,15 +15,16 @@
 		0B9DABE41F727F4E00A31D23 /* MentorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9DABE31F727F4E00A31D23 /* MentorsViewController.swift */; };
 		0BDF9AAE1F7286930069EE6A /* EntityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BDF9AAD1F7286930069EE6A /* EntityCell.xib */; };
 		0BDF9AB01F7286AD0069EE6A /* EntityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF9AAF1F7286AD0069EE6A /* EntityCell.swift */; };
-		0BDF9AB21F729CDD0069EE6A /* MentorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF9AB11F729CDD0069EE6A /* MentorViewController.swift */; };
+		0BDF9AB21F729CDD0069EE6A /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF9AB11F729CDD0069EE6A /* PresentationViewController.swift */; };
 		0BDF9AB41F729D010069EE6A /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDF9AB31F729D010069EE6A /* Details.storyboard */; };
-		0BDF9AB61F729E3F0069EE6A /* PartnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF9AB51F729E3F0069EE6A /* PartnerViewController.swift */; };
 		0BDF9AD31F73AE810069EE6A /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF9AD21F73AE810069EE6A /* StringConstants.swift */; };
 		0BDF9AD61F73AF1C0069EE6A /* Partner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF9AD51F73AF1C0069EE6A /* Partner.swift */; };
 		0BDF9AD81F73AF270069EE6A /* Mentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF9AD71F73AF270069EE6A /* Mentor.swift */; };
 		7A66494ED6EF4B9EB0FDEBBA /* Pods_makeyourappgreatagain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E44E16691AF1CE4071E98A /* Pods_makeyourappgreatagain.framework */; };
 		A5A761B41F7B80D000676F87 /* UIColor+custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A761B21F7B80D000676F87 /* UIColor+custom.swift */; };
 		A5A761B51F7B80D000676F87 /* UIImageView+downloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A761B31F7B80D000676F87 /* UIImageView+downloadImage.swift */; };
+		A5A761B81F7B819500676F87 /* PartnerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A761B71F7B819500676F87 /* PartnerExtensions.swift */; };
+		A5A761BC1F7B81AC00676F87 /* MentorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A761BB1F7B81AC00676F87 /* MentorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +38,8 @@
 		0B9DABE31F727F4E00A31D23 /* MentorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorsViewController.swift; sourceTree = "<group>"; };
 		0BDF9AAD1F7286930069EE6A /* EntityCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EntityCell.xib; sourceTree = "<group>"; };
 		0BDF9AAF1F7286AD0069EE6A /* EntityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityCell.swift; sourceTree = "<group>"; };
-		0BDF9AB11F729CDD0069EE6A /* MentorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorViewController.swift; sourceTree = "<group>"; };
+		0BDF9AB11F729CDD0069EE6A /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		0BDF9AB31F729D010069EE6A /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
-		0BDF9AB51F729E3F0069EE6A /* PartnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerViewController.swift; sourceTree = "<group>"; };
 		0BDF9AD21F73AE810069EE6A /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 		0BDF9AD51F73AF1C0069EE6A /* Partner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partner.swift; sourceTree = "<group>"; };
 		0BDF9AD71F73AF270069EE6A /* Mentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentor.swift; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		640521786A5657B6A2867937 /* Pods-makeyourappgreatagain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makeyourappgreatagain.release.xcconfig"; path = "Pods/Target Support Files/Pods-makeyourappgreatagain/Pods-makeyourappgreatagain.release.xcconfig"; sourceTree = "<group>"; };
 		A5A761B21F7B80D000676F87 /* UIColor+custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+custom.swift"; sourceTree = "<group>"; };
 		A5A761B31F7B80D000676F87 /* UIImageView+downloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+downloadImage.swift"; sourceTree = "<group>"; };
+		A5A761B71F7B819500676F87 /* PartnerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerExtensions.swift; sourceTree = "<group>"; };
+		A5A761BB1F7B81AC00676F87 /* MentorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorExtensions.swift; sourceTree = "<group>"; };
 		F1E44E16691AF1CE4071E98A /* Pods_makeyourappgreatagain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_makeyourappgreatagain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 		0B9DABD01F7274CA00A31D23 /* makeyourappgreatagain */ = {
 			isa = PBXGroup;
 			children = (
+				A5A761B61F7B818500676F87 /* View Models */,
 				0BDF9AD41F73AF140069EE6A /* Models */,
 				0BDF9AD11F73AE740069EE6A /* Constants */,
 				0BDF9AC01F73AA840069EE6A /* View Controllers */,
@@ -101,8 +104,7 @@
 			children = (
 				0B9DABD31F7274CA00A31D23 /* PartnersViewController.swift */,
 				0B9DABE31F727F4E00A31D23 /* MentorsViewController.swift */,
-				0BDF9AB11F729CDD0069EE6A /* MentorViewController.swift */,
-				0BDF9AB51F729E3F0069EE6A /* PartnerViewController.swift */,
+				0BDF9AB11F729CDD0069EE6A /* PresentationViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -167,6 +169,15 @@
 				A5A761B31F7B80D000676F87 /* UIImageView+downloadImage.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5A761B61F7B818500676F87 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5A761B71F7B819500676F87 /* PartnerExtensions.swift */,
+				A5A761BB1F7B81AC00676F87 /* MentorExtensions.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,13 +315,14 @@
 				0BDF9AB01F7286AD0069EE6A /* EntityCell.swift in Sources */,
 				0BDF9AD61F73AF1C0069EE6A /* Partner.swift in Sources */,
 				0BDF9AD31F73AE810069EE6A /* StringConstants.swift in Sources */,
-				0BDF9AB61F729E3F0069EE6A /* PartnerViewController.swift in Sources */,
 				A5A761B41F7B80D000676F87 /* UIColor+custom.swift in Sources */,
 				A5A761B51F7B80D000676F87 /* UIImageView+downloadImage.swift in Sources */,
 				0B9DABE41F727F4E00A31D23 /* MentorsViewController.swift in Sources */,
+				A5A761B81F7B819500676F87 /* PartnerExtensions.swift in Sources */,
 				0B9DABD41F7274CA00A31D23 /* PartnersViewController.swift in Sources */,
 				0BDF9AD81F73AF270069EE6A /* Mentor.swift in Sources */,
-				0BDF9AB21F729CDD0069EE6A /* MentorViewController.swift in Sources */,
+				0BDF9AB21F729CDD0069EE6A /* PresentationViewController.swift in Sources */,
+				A5A761BC1F7B81AC00676F87 /* MentorExtensions.swift in Sources */,
 				0B9DABD21F7274CA00A31D23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+extension Mentor: PresentationViewModel {
+    var body: String {
+        return self.description
+    }
+}
+
+extension Mentor: EntityCellViewModel { }

@@ -56,14 +56,9 @@ class MentorsViewController: UITableViewController {
             fatalError()
         }
 
-        cell.name.text = self.mentors[indexPath.row].name
-        cell.picture.downloadedFrom(link: self.mentors[indexPath.row].photoUrl)
+        let mentor = self.mentors[indexPath.row]
 
-        cell.backgroundColor = UIColor.customDarkGray
-
-        let bgColorView = UIView()
-        bgColorView.backgroundColor = UIColor.customGray
-        cell.selectedBackgroundView = bgColorView
+        cell.configure(with: mentor)
 
         return cell
     }
@@ -73,8 +68,8 @@ class MentorsViewController: UITableViewController {
 
         let storyboard = UIStoryboard(name: StoryboardName.details, bundle: nil)
 
-        if let viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerName.mentor) as? MentorViewController {
-            viewController.mentor = mentor
+        if let viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerName.presentation) as? PresentationViewController {
+            viewController.viewModel = mentor
 
             self.navigationController?.pushViewController(viewController, animated: true)
         }

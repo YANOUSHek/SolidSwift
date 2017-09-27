@@ -8,9 +8,8 @@
 import Foundation
 
 enum ViewControllerName {
-    static let partner = "PartnerViewController"
+    static let presentation = "PresentationViewController"
     static let partners = "PartnersViewController"
-    static let mentor = "MentorViewController"
     static let mentors = "MentorsViewController"
 }
 
